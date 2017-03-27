@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor</title>
+	
+</head>
+<body>
+	<style type="text/css">
+		progress{
+			 		}
+	</style>
+	<script type="text/javascript" src="audio.js"></script>
+	<audio id="audio">
+		<source src="audio.mp3" id="cancioncita" type="audio/mpeg">
+	</audio>
+	<button onclick="reproducir()">></button>
+	<button onclick="pausar()">||</button>
+	<button onclick="detener()">[]</button>
+	<button onclick="avanzar()">>></button>
+	<button onclick="regresar()"><<</button>
+	<progress value="50" max="200" ></progress>
+	<button onclick="volumenMenos()">-</button>
+	<button onclick="volumenMas()">+</button>
+
+</body>
+</html>
