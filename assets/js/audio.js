@@ -9,7 +9,9 @@ function pausar(){
 }
 
 function detener(){
-	cancion.load();
+	//cancion.load(); Recarga la canción. Nota: Los megas cuestan.
+  cancion.pause();
+  cancion.currentTime = 0;
 }
 
 
@@ -32,6 +34,7 @@ function regresar(){
    var barra = document.getElementById("barra");
 
   barra.value = cancion.currentTime;
+  barra.max = cancion.duration;
 
 };
 
