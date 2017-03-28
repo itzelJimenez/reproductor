@@ -37,9 +37,9 @@ function regresar(){
 
 function duracionTotal(){
  
- var escribirDuracion = document.getElementById('duration')
- var duracion = document.getElementById("audio").duration;
- escribirDuracion.innerHTML = duracion;
+ var escribirDuracion = document.getElementById('duration');
+
+ escribirDuracion.innerHTML = cancion.currentTime;
 }
 
 function formatoDeTiempo(tiempo){
