@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head lang="es">
+		<meta charset="UTF-8">
+		<title>Reproductor</title>
+	
+	</head>
+	<body>
+		<header>
+            <h1>Reproductor de audio con javascript y html5</h1>
+        </header>
+		<section alt="Reproductor de audio">
+			<audio id="audio" ontimeupdate="mostrarAvance()">
+				<source src="audio.mp3" id="cancioncita" type="audio/mpeg">
+			</audio>
+			<button onclick="reproducir()">></button>
+			<button onclick="pausar()">||</button>
+			<button onclick="detener()">[]</button>
+			<button onclick="regresar()"><<</button>
+			<button onclick="avanzar()">>></button>
+			<button onclick="volumenMas()">Vol+</button>
+			<button onclick="volumenMenos()">Vol-</button>
+			<progress value="50" max="240" id="barra"></progress>
+			<span id="duration"></span>
+			<time id="tiempoTranscurrido">00:00</time>
+			<span>/</span>
+			<time id="totalTiempo">00:00</time>
+		</section>
+		<script type="text/javascript" src="assets/js/audio.js"></script>
+	</body>
+</html>
